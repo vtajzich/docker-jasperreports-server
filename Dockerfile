@@ -6,7 +6,7 @@ ADD http://netcologne.dl.sourceforge.net/project/jasperserver/JasperServer/Jaspe
 
 RUN chmod +x /home/root/jasperreports-server-cp-${jasperVersion}-linux-x64-installer.run
 
-RUN /home/root/jasperreports-server-cp-${jasperVersion}-linux-x64-installer.run --mode unattended --postgres_password v3nd4v0
+RUN /home/root/jasperreports-server-cp-${jasperVersion}-linux-x64-installer.run --mode unattended --postgres_password Password1
 
 COPY check.sh /home/root/
 RUN chmod +x /home/root/check.sh
